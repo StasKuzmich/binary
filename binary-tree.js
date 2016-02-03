@@ -83,37 +83,26 @@ class BinaryTree {
 
 			childCount = (current.left !== null ? 1 : 0) + (current.right !== null ? 1 : 0);
 
-			// Р—РЅР°С‡РµРЅРёРµ РІ РєРѕСЂРЅРµ
 			if (current === this.root){
-				// РќРµС‚Сѓ РґРµС‚РµР№
 				if (childCount === 0){
 					this.root = null;
-				// 1 children
 				} else if (childCount === 1){
 					this.root = (current.right === null ? current.left : current.right);
-				// 2 childrens
-				} else {
-				
+				} else {	
 				}
-			// Р—РЅР°С‡РµРЅРёРµ РЅРµ РІ РєРѕСЂРЅРµ
 			} else {
-				// РќРµС‚Сѓ РґРµС‚РµР№
 				if (childCount === 0){
-					// РµСЃР»Рё Р·РЅР°С‡РµРЅРёРµ РјРµРЅСЊС€Рµ СЂРѕРґРёС‚РµР»СЏ СѓРґР°Р»СЏРµРј Р»РµРІС‹Р№ СЌР»РµРјРµРЅС‚
 					if (current.data < parent.data){
 						parent.left = null;
-					// РµСЃР»Рё Р·РЅР°С‡РµРЅРёРµ Р±РѕР»СЊС€Рµ СЂРѕРґРёС‚РµР»СЏ СѓРґР°Р»СЏРµРј РїСЂР°РІС‹Р№ СЌР»РµРјРµРЅС‚
 					} else {
 						parent.right = null;
 					}
-				// Р•СЃС‚СЊ 1 children
 				} else if (childCount === 1) {
 					if (current.data < parent.data){
 						parent.left = (current.left === null ? current.right : current.left);
 					} else {
 						parent.right = (current.left === null ? current.right : current.left);
 					}
-				// РµСЃР»Рё 2 childrens
 				} else {
 					
 				}
