@@ -113,8 +113,35 @@ class BinaryTree {
 	}
 
 	size() {
-
+        var length = 0;
+        
+        this.traverse(function(node){
+            length++;
+        });
+        
+        return length;
 	}
+
+    traverse(act){
+        
+        function postfix(node){
+
+            if (node){
+                
+                if (node.left !== null){
+                    postfix(node.left);
+                }            
+            
+                if (node.right !== null){
+                    postfix(node.right);
+                }
+
+                act.call(this, node);
+            }        
+        }
+        
+        postfix(this.root);    
+    }
 
 	isEmpty() {
 		return this.root === null;
