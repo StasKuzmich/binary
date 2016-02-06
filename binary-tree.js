@@ -89,6 +89,19 @@ class BinaryTree {
 				} else if (childCount === 1){
 					this.root = (current.right === null ? current.left : current.right);
 				} else {	
+                        replacement = this.root.left;
+                        while (replacement.right !== null){
+                            replacementParent = replacement;
+                            replacement = replacement.right;
+                        }
+                        if (replacementParent !== null){
+                            replacementParent.right = replacement.left;
+                            replacement.right = this.root.right;
+                            replacement.left = this.root.left;
+                        } else {
+                            replacement.right = this.root.right;
+                        }
+                        this.root = replacement;					
 				}
 			} else {
 				if (childCount === 0){
@@ -104,7 +117,28 @@ class BinaryTree {
 						parent.right = (current.left === null ? current.right : current.left);
 					}
 				} else {
-					
+ //reset pointers for new traversal
+                        replacement = current.right;
+                        replacementParent = current;
+
+                        //find the right-most node
+                        while(replacement.left !== null){
+                            replacementParent = replacement;
+                            replacement = replacement.left;
+                        }
+
+                        replacementParent.right = replacement.right;
+
+                        //assign children to the replacement
+                        replacement.right = current.right;
+                        replacement.left = current.left;
+
+                        //place the replacement in the right spot
+                        if (current.data < parent.data){
+                            parent.left = replacement;
+                        } else {
+                            parent.right = replacement;
+                        }          										
 				}
 			}
 
