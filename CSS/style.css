@@ -1,0 +1,446 @@
+/* font-family: "SourceSansProRegular"; */
+@font-face {
+    font-family: "SourceSansProRegular";
+    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot");
+    src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SourceSansProRegular/SourceSansProRegular.woff") format("woff"),
+    url("../fonts/SourceSansProRegular/SourceSansProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SourceSansProLight"; */
+@font-face {
+    font-family: "SourceSansProLight";
+    src: url("../fonts/SourceSansProLight/SourceSansProLight.eot");
+    src: url("../fonts/SourceSansProLight/SourceSansProLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SourceSansProLight/SourceSansProLight.woff") format("woff"),
+    url("../fonts/SourceSansProLight/SourceSansProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SourceSansProBold"; */
+@font-face {
+    font-family: "SourceSansProBold";
+    src: url("../fonts/SourceSansProBold/SourceSansProBold.eot");
+    src: url("../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SourceSansProBold/SourceSansProBold.woff") format("woff"),
+    url("../fonts/SourceSansProBold/SourceSansProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "BebasBold"; */
+@font-face {
+    font-family: "BebasBold";
+    src: url("../fonts/BebasBold/BebasBold.eot");
+    src: url("../fonts/BebasBold/BebasBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasBold/BebasBold.woff") format("woff"),
+    url("../fonts/BebasBold/BebasBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*font-family: 'FontAwesome'*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 1400px), (min-width: 500px){
+
+body{
+	font: 1.53vw SourceSansProRegular, Helvetica, sans-serif;
+	margin: 0;
+	background-image: url('../img/dot-1.png');
+	background-repeat: repeat;
+}
+h1, h2, h3, p, ul, li{
+	margin: 0;
+	padding: 0;
+}
+.all-page{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.all-page > *{
+	width: 100vw;
+	min-height: 1vw;
+}
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: border-box;
+	height: 13.397vw;
+	padding: 3.8278vw 0;
+}
+
+/*logo*/
+	.logo{
+		width: 30vw;
+		color: black;
+	}
+		img, h2{
+		display: inline-block;
+		}
+		.logo > img{
+			width: 4.785vw;
+			height: auto;
+		}
+		.logo > h2{
+			font: 3.83vw SourceSansProBold, Helvetica, sans-serif;
+			padding-left: 0.9569vw;
+		}
+		.logo h2 > span {
+			font-family:SourceSansProLight, Helvetica, sans-serif;
+		}
+
+/*navigation*/
+	.nav:before{
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: bottom;
+	}
+		.nav li{
+			display: inline-block;
+			font: 1.44vw SourceSansProRegular, Helvetica, sans-serif;
+			padding-left: 0.9569vw;
+			vertical-align: bottom;
+			list-style-type: none;
+		}
+		.nav li:first-child{
+			font-size: 1.63vw;
+			font-weight: bold;			
+		}
+		.nav a{
+			text-decoration: none;
+			color: black;
+		}
+		.nav li:hover{
+			font-size: 1.63vw;
+			font-weight: bold;
+		}
+		.nav li:active{
+			color: grey;
+		}
+		/*arrow only for top navigation*/
+		.header .nav li:before{
+			content: "";
+			padding-left: 1.4354vw;
+			background: url(../img/arrow-right.png) 0 50% no-repeat;
+			background-size: 1vw;
+		}
+
+/*main block*/
+.main-content{
+	display: flex;
+	flex-wrap: wrap;
+}			
+	.main-border{
+		border: 0.09569vw solid rgb(204, 204, 204);
+	}
+	.main-content > *{
+		width: 1vw;
+		min-height: 1vw;
+	}
+	.our-service, .information, .our-contact{
+		box-sizing: border-box;
+		margin: 3.349vw 0;
+		padding: 1.9139vw 1.9139vw 2.3923vw 3.349vw;
+		height: 31.5789vw;
+	}
+
+/*presentation block*/	
+	.presentation{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		background-color: rgb(250, 166, 26);
+		width: 100%;
+		min-height: 52.153vw;
+	}
+		.presentation > *{
+			min-width: 1vw;
+			min-height: 1vw;
+
+		}
+		.name{
+			width: 100%;
+			margin: 0 auto;
+			min-height: 8.612vw;
+		}
+		h1{
+			font: 10vw BebasBold, sans-serif;
+			text-align: center;
+		}
+
+/*video in presentation*/
+		.video{
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			width: 60.287vw;
+			height: 34.8325vw;
+			background-color: #000;
+		}
+			.video-description{
+				box-sizing: border-box;
+				padding: 2.1053vw 0.9569vw 0.5785vw 1.9139vw;
+				background-color: black;
+			}
+			.video > img{
+				width: 41.6268vw;
+			}
+			.video-description > h3{
+				display: inline-block;
+				font: 1.91vw BebasBold, sans-serif;
+				padding: 0 0.5785vw;
+				background-color: white;
+			}
+			.video-description > p{
+				padding: 0.9569vw 0 1.4354vw 0.699vw;
+				color: white;
+			}
+			.video-description > p:nth-child(4){
+				font-size: 1.05vw;
+				line-height: 1.9139vw;
+				padding: 0.3828vw 0 1.4354vw 0.6699vw;
+			}
+		.description{
+			display: block;
+			position: relative;
+			width: 26.7956vw;
+			height: 34.8325vw;
+			background-color: white;
+		}
+			.description .header-style{
+				padding-left: 1.4354vw;
+			}
+			.description > img{
+				width: 26.7956vw;
+
+			}
+/*style of header of block in main part*/
+			.header-style{
+				padding: 0.5785vw 0;
+			}
+			.header-style, .header-style span{
+				font: 2.3vw BebasBold, sans-serif;
+			}
+			.header-style h2{
+				padding: 0.09569vw 0.5785vw 1.4354vw 1.9139vw;
+			}
+			.header-style span{
+				color: rgb(250, 166, 26);
+			}
+			.text{
+				font-size: 1.34vw;
+				font-weight: 700;
+				line-height: 1.9139vw;
+				padding: 1.244vw 1.4354vw;
+			}
+
+/*button "Raed more"*/
+			.more-button{
+				display: inline-block;
+				position: absolute;
+				bottom: 0.9569vw;
+				right: 0.9569vw;
+				font-size: 1.34vw;
+			}
+				.more-button span:before{
+					content: "";
+					display: inline-block;
+					height: 100%;
+					vertical-align: middle;
+				}			
+				.more-button a{
+					color: white;
+				}
+				.more-button span{
+					box-sizing: border-box;
+					display: inline-block;
+					height: 2.488vw;
+					vertical-align: middle;
+					padding: 0 0.5785vw;
+					background-color: black;
+				}
+				.more-button img{
+					width: 2.488vw;
+					vertical-align: top;
+					background-color: rgb(250, 166, 26);
+				}
+				.more-button a:hover{
+					margin-right: 0.5785vw;
+				}
+
+/*OUR SERVICE*/
+	.our-service{
+		flex-grow: 3;
+		border-width: 0.09569vw 0;
+	}
+
+/*scoope of link in service block*/
+		.our-service a{
+			display: block;
+			font-size: 1.72vw;
+			font-weight: 100;
+			text-decoration: none;
+			color: black;
+			list-style-type: none;
+			line-height: 3.349vw;
+		}
+		.our-service a:before{
+			content: "";
+			box-sizing: border-box;
+			display: inline-block;
+			width: 2.1vw;
+			height: 1.7vw;
+			background: url(../img/arrow-right-black.png) 50% 50% no-repeat;
+			background-size: 1.2vw;
+			vertical-align: middle;
+			margin-right: 1.4354vw;
+			padding: 0.7656vw;
+			background-color: rgb(250, 166, 26);
+		}
+		.our-service a:hover{
+			font-weight: bold;
+			margin-left: 0.5785vw;
+		}
+		.our-service a:active{
+			color: grey;
+		}
+
+/*DID YOU KNOW?*/
+	.information{
+		position: relative;
+		flex-grow: 5;
+		flex-shrink: 3;		
+	}
+		.information .text{
+			line-height: 2.5vw;
+			padding-left: 0;
+		}
+		/*change positioning of button "Raed more"*/
+		.information .more-button{
+			bottom: 4.3062vw;
+			right: 3.38278vw;
+		}
+
+/*CONTACTS*/
+	.our-contact{
+		flex-grow: 2.8;
+		flex-shrink: 2;
+		border-width: 0.09569vw 0;
+	}
+		.our-contact li{
+			margin: 1.4354vw 0;
+			list-style: none;
+		}
+		.our-contact li span{
+			background-color:  black;
+			color: white;
+			padding: 0.1914vw 0.5785vw;
+			margin-left: 3.349vw;
+		}
+		.our-contact li span:nth-child(2){
+			margin-left: 1.4354vw;
+		}
+		.our-contact i{
+			font-size: 2.3vw;
+			width: 1.9139vw;
+		}
+/*OUR CLIENTS*/
+	.clients{
+		width: 100%;
+		height: 17.2249vw;
+		margin: 1.9139vw 3.349vw;
+	}
+		.client-scope{
+			display: flex;
+			justify-content: space-between;
+		}
+			.client-scope li{
+				list-style: none;
+			}
+				.client-scope a{
+					display: block;
+					width: 9.5694vw;
+					height: 9.5694vw;
+					background: url(../img/client.png);	
+					background-size: 92.5358852vw;				
+				}
+				.client-scope li:nth-child(2) a{
+					background-position: -15.7895vw -0.9569vw; 
+				}
+				.client-scope li:nth-child(3) a{
+					background-position: -33.49282vw 0; 
+				}
+				.client-scope li:nth-child(4) a{
+					background-position: -49.76077vw 0; 
+				}
+				.client-scope li:nth-child(5) a{
+					background-position: -66.98565vw 0; 
+				}
+				.client-scope li:nth-child(6) a{
+					background-position: -82.9665vw 0; 
+				}
+			.client-scope li:hover{
+				margin-bottom: 1.4354vw;
+			}
+			.client-scope a:first-child:hover{
+				margin-top: -0.5785vw;
+			}		
+
+/*footer*/
+.footer{
+	display: flex;
+	flex-direction: row;
+	height: 8.612vw;
+	margin-top: 1.9139vw;
+}
+
+/*logo bottom change some style*/
+	.footer .logo{
+		width: 23.9234vw;
+	}
+	.footer .logo > img{
+		width: 2.8708vw;
+		height: 2.8708vw;
+	}
+	.footer .logo h2{
+		font-size: 2.87vw;
+	}
+
+/*change positioning for bottom navigation */
+	.footer nav{
+		width: 76vw;
+		flex-shrink: 6;
+	}
+	.footer.nav:before{
+		vertical-align: top;
+	}
+		.footer .nav li{
+			vertical-align: top;
+		}
+		.footer nav{
+			min-width: 47.8469vw;
+		}
+		.footer .nav{
+			height: 1.9139vw;
+			text-align: right;
+			border-bottom: 0.09569vw solid rgb(204, 204, 204);
+		}
+		.footer nav span{
+			display: block;
+			text-align: right;
+			padding-top: 0.9569vw;
+		}
+}
+
+
